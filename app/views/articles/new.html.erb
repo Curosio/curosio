@@ -1,0 +1,15 @@
+<%= form_tag scope: :article, local: true do |form| %>
+  <p>
+    <br>
+    <%= text_field_tag :title %>
+  </p>
+
+  <p>
+    <%= label_tag :text %><br>
+    <%= text_area_tag :text %>
+  </p>
+
+  <p>
+    <%= submit_tag("Search") %>
+  </p>
+<% end %>
